@@ -4,11 +4,17 @@
 #include<iostream>
 #include<sstream>
 #include<windows.h>
+#include <SFML/Audio.hpp>
 using namespace std;
 using namespace sf;
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "Sudoku", sf::Style::Titlebar | sf::Style::Close);
+	sf::Music music;
+	if (!music.openFromFile("music/abc.ogg"))
+	return -1; // error
+	music.play(); 
+		
 	PagesManager pageManager(&window);
 	GamePlayPage gameplay;
 	/*SudokuMapGen gen;
@@ -20,7 +26,6 @@ int main()
 	//time
 	window.setFramerateLimit(60);
 	srand(time(NULL));
-
 	while (window.isOpen())
 	{
 		sf::Event event;

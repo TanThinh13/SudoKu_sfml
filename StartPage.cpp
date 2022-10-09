@@ -140,7 +140,7 @@ void StartPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_PlayGameButton)) {
 
 		this->_PlayGameButton.setFillColor(sf::Color::White);
-		this->_playGameText.setFillColor(CaramelColor);
+		this->_playGameText.setFillColor(sf::Color::Black);
 	}                                                                       //PlayGame Btn	
 	else {
 		this->_PlayGameButton.setFillColor(CaramelColor);
@@ -150,7 +150,7 @@ void StartPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_LevelButton)) {
 
 		this->_LevelButton.setFillColor(sf::Color::White);
-		this->_levelText.setFillColor(CaramelColor);
+		this->_levelText.setFillColor(sf::Color::Black);
 	}                                                                       //Level Btn	
 	else {
 		this->_LevelButton.setFillColor(CaramelColor);
@@ -160,7 +160,7 @@ void StartPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_computerPlayButton)) {
 
 		this->_computerPlayButton.setFillColor(sf::Color::White);
-		this->_computerPlayText.setFillColor(CaramelColor);
+		this->_computerPlayText.setFillColor(sf::Color::Black);
 	}                                                                       //CompPlay
 	else {
 		this->_computerPlayButton.setFillColor(CaramelColor);
@@ -170,7 +170,7 @@ void StartPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_exitButton)) {
 
 		this->_exitButton.setFillColor(sf::Color::White);
-		this->_exitButtonText.setFillColor(CaramelColor);
+		this->_exitButtonText.setFillColor(sf::Color::Black);
 	}                                                                       //exit
 	else {
 		this->_exitButton.setFillColor(CaramelColor);

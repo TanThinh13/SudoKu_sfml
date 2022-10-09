@@ -5,6 +5,7 @@
 
 
 
+
 void GamePlayPage::setUp() {
 
 
@@ -19,6 +20,7 @@ void GamePlayPage::setUp() {
 		std::cout << "Shutting Down!" << std::endl;
 		this->_window->close();
 	}
+
 
 	auto textureSize = this->_bgTexture.getSize();
 	auto WindowSize = this->_window->getSize();
@@ -328,7 +330,7 @@ void GamePlayPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_BackButton)) {
 
 		this->_BackButton.setFillColor(sf::Color::White);
-		this->_BackText.setFillColor(CaramelColor);
+		this->_BackText.setFillColor(sf::Color::Black);
 	}                                                                       //back btn
 	else {
 		this->_BackButton.setFillColor(CaramelColor);
@@ -365,7 +367,7 @@ void GamePlayPage::HoverCheck(sf::RectangleShape* button, sf::Text* buttonText) 
 	if (this->IsMouseOverButton(*button))
 	{
 		button->setFillColor(sf::Color::White);
-		buttonText->setFillColor(LineColor);
+		buttonText->setFillColor(sf::Color::Black);
 	}
 	else
 	{

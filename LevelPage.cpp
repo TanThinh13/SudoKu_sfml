@@ -170,7 +170,7 @@ void LevelPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_EasyButton)) {
 
 		this->_EasyButton.setFillColor(sf::Color::White);
-		this->_EasyText.setFillColor(CaramelColor);
+		this->_EasyText.setFillColor(sf::Color::Black);
 	}                                                                       //easy Btn	
 	else {
 		this->_EasyButton.setFillColor(CaramelColor);
@@ -180,7 +180,7 @@ void LevelPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_MediumButton)) {
 
 		this->_MediumButton.setFillColor(sf::Color::White);
-		this->_MediumText.setFillColor(CaramelColor);
+		this->_MediumText.setFillColor(sf::Color::Black);
 	}                                                                       //medium Btn	
 	else {
 		this->_MediumButton.setFillColor(CaramelColor);
@@ -190,7 +190,7 @@ void LevelPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_HardButton)) {
 
 		this->_HardButton.setFillColor(sf::Color::White);
-		this->_HardText.setFillColor(CaramelColor);
+		this->_HardText.setFillColor(sf::Color::Black);
 	}                                                                       //hard btn
 	else {
 		this->_HardButton.setFillColor(CaramelColor);
@@ -200,7 +200,7 @@ void LevelPage::MouseMoveTigger() {
 	if (this->IsMouseOverButton(this->_BackButton)) {
 
 		this->_BackButton.setFillColor(sf::Color::White);
-		this->_BackText.setFillColor(CaramelColor);
+		this->_BackText.setFillColor(sf::Color::Black);
 	}                                                                       //back btn
 	else {
 		this->_BackButton.setFillColor(CaramelColor);

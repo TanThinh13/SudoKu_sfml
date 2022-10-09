@@ -4,6 +4,9 @@
 #include "SudokuMapGen.h"
 #include "sstream"
 #include "string"
+#include <SFML/Audio.hpp>
+
+
 
 using namespace std;
 class GamePlayPage : public BasePageClass
@@ -23,6 +26,7 @@ public:
 
 	bool computerPlay; // if true "AI" is playing
 	void TimePlay();
+
 	void Display() override;
 	void HandleEvents(sf::Event*) override;
 	const sf::Color CaramelColor = sf::Color(235, 114, 84);
